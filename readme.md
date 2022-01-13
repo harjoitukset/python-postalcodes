@@ -2,12 +2,28 @@
 
 Tämän koodaustehtävän tavoitteena on luoda pohja seuraavien viikkojen tehtäville, joissa käsittelemme dataa ja testaamme ohjelmistoja Python-kielellä. Kaikkien mahdollisten Pythonin rakenteiden opetteleminen etukäteen ei ole kurssin kannalta tarkoituksenmukaista, joten tässä tehtäväksi on valittu sellainen, jonka kautta opimme soveltamaan Pythonin perusrakenteita.
 
-Tehtävien toimintalogiikan ja käyttöliittymän ei tarvitse noudattaa pilkulleen annettuja esimerkkejä, mutta toimintalogiikan tulee olla samankaltainen. Automaattisen arvioinnin näkökulmasta ohjelmasi tulee toimia täsmälleen samoilla syötteillä kuin esimerkit.
+Tehtävät arvostellaan käyttäen [GitHub classroom](https://classroom.github.com/) -palvelua, joka suorittaa komentosi, ja tarkastaa ja pisteyttää niiden tulokset automaattisesti. Taustalla GitHub classroom hyödyntää [GitHub actions](https://github.com/features/actions) -nimistä jatkuvan integroinnin palvelua. Voit tarvittaessa yrittää tehtäviä monta kertaa. Tee tällöin uusi commit, ja vie muutokset uudelleen GitHubiin.
 
-Tehtävien tausta-aineistona käytämme GitHubissa julkaistua postinumeroaineistoa, jonka tarkemmat ohjeet käsitellään seuraavaksi.
+Tehtävien toimintalogiikan ja käyttöliittymän ei tarvitse noudattaa pilkulleen annettuja esimerkkejä, mutta toimintalogiikan tulee olla samankaltainen. Automaattisen arvioinnin vuoksi ohjelmasi tulee toimia täsmälleen samoilla syötteillä kuin esimerkit.
 
 
-## Postinumeroaineisto
+## Harjoitusten kloonaaminen
+
+Kun olet hyväksynyt tehtävän GitHub classroomissa ja saanut repositoriosta henkilökohtaisen kopion, kloonaa se itsellesi `git clone` -komennolla. Siirry sen jälkeen VS Codeen editoimaan tiedostoja.
+
+Kloonatessasi repositoriota varmista, että Git-osoitteen lopussa on oma GitHub-käyttäjänimesi. Jos käyttäjänimesi puuttuu osoitteesta, kyseessä ei ole henkilökohtainen kopiosi tehtävästä. Luo tässä tapauksessa oma repositorio tämän linkin kautta: https://classroom.github.com/a/sk7RyyX1.
+
+
+## Vastausten lähettäminen
+
+Kun olet saanut toisen tai molemmat tehtävät ratkaistua, lisää tiedostoihin tekemäsi muutokset versionhallintaan `git add` ja `git commit` -komennoilla. Lähetä ratkaisut arvioitavaksi `git push`-komennolla. Git push käynnistää automaattisesti workflow:n, joka testaa kaikki komentosi ja antaa niistä joko hyväksytyn tai hylätyn tuloksen.
+
+Kun GitHub Actions on saanut koodisi suoritettua, näet tuloksen GitHub-repositoriosi [Actions-välilehdellä](../../actions/workflows/classroom.yml). Arvioinnin valmistumiseen menee tyypillisesti noin pari minuuttia.
+
+Klikkaamalla yllä olevan linkin takaa viimeisintä "GitHub Classroom Workflow" -suoritusta, saat tarkemmat tiedot tehtävän arvioinnista. Sivun alaosassa näkyy saamasi pisteet. Klikkaamalla "Autograding"-otsikkoa pääset katsomaan tarkemmin arvioinnissa suoritetut vaiheet ja niiden tulokset.
+
+
+# Postinumeroaineisto
 
 GitHubista löytyy valmis projekti https://github.com/theikkila/postinumerot, jonka avulla voidaan hakea Postin tietokannasta kaikki postinumerotiedot. Projektissa on myös mukana valmiiksi koostettuja JSON-tiedostoja postinumeroista. 
 
@@ -45,7 +61,7 @@ JSON-muotoisen merkkijonon parsiminen Pythonin tietorakenteiksi onnistuu standar
 ```
 
 
-## Osa 1: Postitoimipaikka (3 pistettä)
+# Osa 1: Postitoimipaikka (3 pistettä)
 
 Kirjoita Python-kielinen ohjelma `01_postitoimipaikka.py`, joka kysyy  käyttäjältä postinumeron ja kertoo, mihin postitoimipaikkaan kyseinen postinumero kuuluu. 
 
@@ -65,7 +81,7 @@ Vinkit:
 * Tulosteen kirjainkoolla ei ole merkitystä.
 
 
-## Osa 2: Postinumerot (2 pistettä)
+# Osa 2: Postinumerot (2 pistettä)
 
 Kirjoita Python-kielinen ohjelma `02_postinumerot.py`, joka kysyy käyttäjältä postitoimipaikan nimen, ja listaa kaikki kyseisen postitoimipaikan postinumerot **kasvavassa järjestyksessä**.
 
@@ -76,12 +92,12 @@ Esimerkkisuoritus:
     $ python3 02_postinumerot.py
 
     Kirjoita postitoimipaikka: Porvoo
-    Postinumerot: 06100,  06101, 06150, 06151, 06200, 06400, 06401, 06450, 06500
+    Postinumerot: 06100, 06101, 06150, 06151, 06200, 06400, 06401, 06450, 06500
 
 Toteuta ohjelma siten, että syötetyn postitoimipaikan kirjainkoolla ei ole merkitystä. Huolehdi myös siitä, että tuntemattoman nimen syöttäminen ei kaada ohjelmaa, vaan tulostaa tekstin 'Tuntematon postitoimipaikka'.
 
 
-## Lähteitä
+# Lähteitä
 
 Pythonin dict-tietorakenne, eli sanakirja, muistuttaa Javan map-tietorakennetta. Tulet tarvitsemaan sanakirjaa tausta-aineiston käsittelemisessä: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 
