@@ -61,7 +61,7 @@ JSON-muotoisen merkkijonon parsiminen Pythonin tietorakenteiksi onnistuu standar
 ```
 
 
-# Osa 1: Postitoimipaikka (3 pistettä)
+# Osa 1: Postitoimipaikka (2 pistettä)
 
 Kirjoita Python-kielinen ohjelma `01_postitoimipaikka.py`, joka kysyy  käyttäjältä postinumeron ja kertoo, mihin postitoimipaikkaan kyseinen postinumero kuuluu. 
 
@@ -81,7 +81,7 @@ Vinkit:
 * Tulosteen kirjainkoolla ei ole merkitystä.
 
 
-# Osa 2: Postinumerot (2 pistettä)
+# Osa 2: Postinumerot (3 pistettä)
 
 Kirjoita Python-kielinen ohjelma `02_postinumerot.py`, joka kysyy käyttäjältä postitoimipaikan nimen, ja listaa kaikki kyseisen postitoimipaikan postinumerot **kasvavassa järjestyksessä**.
 
