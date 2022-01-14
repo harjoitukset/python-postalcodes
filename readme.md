@@ -63,13 +63,13 @@ JSON-muotoisen merkkijonon parsiminen Pythonin tietorakenteiksi onnistuu standar
 
 # Osa 1: Postitoimipaikka (2 pistettä)
 
-Kirjoita Python-kielinen ohjelma `01_postitoimipaikka.py`, joka kysyy  käyttäjältä postinumeron ja kertoo, mihin postitoimipaikkaan kyseinen postinumero kuuluu. 
+Kirjoita Python-kielinen ohjelma `postitoimipaikka.py`, joka kysyy  käyttäjältä postinumeron ja kertoo, mihin postitoimipaikkaan kyseinen postinumero kuuluu. 
 
 Tehtävän ratkaisemiseksi sinun tulee kysyä käyttäjältä syötettä ja etsiä postinumeroaineistosta syötettä vastaava arvo. Voit joko tallentaa postinumeroaineiston koneellesi ja [lukea sen levyltä](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files) tai toteuttaa ohjelmasi [lukemaan tiedoston suoraan verkosta](https://docs.python.org/3/howto/urllib2.html).
 
 Esimerkkisuoritus:
 
-    $ python3 01_postitoimipaikka.py
+    $ python3 postitoimipaikka.py
     
     Kirjoita postinumero: 00100
     HELSINKI
@@ -83,13 +83,13 @@ Vinkit:
 
 # Osa 2: Postinumerot (3 pistettä)
 
-Kirjoita Python-kielinen ohjelma `02_postinumerot.py`, joka kysyy käyttäjältä postitoimipaikan nimen, ja listaa kaikki kyseisen postitoimipaikan postinumerot **kasvavassa järjestyksessä**.
+Kirjoita Python-kielinen ohjelma `postinumerot.py`, joka kysyy käyttäjältä postitoimipaikan nimen, ja listaa kaikki kyseisen postitoimipaikan postinumerot **kasvavassa järjestyksessä**.
 
 Tehtävän voi ratkaista useilla tavoilla, joten käytä hetki ongelman pohtimiseen ennen kuin ryhdyt koodaamaan. Olisiko esimerkiksi helpompaa jäsentää postinumeroaineisto etukäteen uudenlaiseksi tietorakenteeksi, vai käydä avain-arvo-pareja läpi yksi kerrallaan postinumeroiden löytämiseksi. Seuraavalla viikolla käsittelemme hieman lähemmin tietorakenteiden ja algoritmien suunnittelua ja tehokkuutta.
 
 Esimerkkisuoritus:
 
-    $ python3 02_postinumerot.py
+    $ python3 postinumerot.py
 
     Kirjoita postitoimipaikka: Porvoo
     Postinumerot: 06100, 06101, 06150, 06151, 06200, 06400, 06401, 06450, 06500
